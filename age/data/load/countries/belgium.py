@@ -55,11 +55,11 @@ class Belgium(base.LoaderBase):
     def cases(self) -> pd.DataFrame:
         cases = self.raw_cases()
         cases = transformations.add_both_sexes(cases)
-        cases['ISO'] = 'ISO'
+        cases['ISO'] = ISO
         return cases
 
     def deaths(self) -> pd.DataFrame:
         deaths = self.raw_deaths()
         deaths = transformations.add_both_sexes(deaths)
-        deaths['ISO'] = 'ISO'
+        deaths['ISO'] = ISO
         return deaths

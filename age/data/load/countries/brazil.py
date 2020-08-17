@@ -9,8 +9,8 @@ from age.data.load import coverage
 ISO = 'BRA'
 
 def _age_conform(s: str) -> str:
-    if s == '90':
-        return '90+'
+    if s == '100':
+        return '100+'
     else:
         return s + '-' + str(int(s) + 9)
 
